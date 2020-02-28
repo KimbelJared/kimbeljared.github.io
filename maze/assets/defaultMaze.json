@@ -1,0 +1,603 @@
+{
+  "1": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "2": [
+    false,
+    false,
+    false,
+    true
+  ],
+  "3": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "4": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "5": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "6": [
+    false,
+    false,
+    false,
+    true
+  ],
+  "7": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "8": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "9": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "10": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "11": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "12": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "13": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "14": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "15": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "16": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "17": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "18": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "19": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "20": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "21": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "22": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "23": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "24": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "25": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "26": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "27": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "28": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "29": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "30": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "31": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "32": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "33": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "34": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "35": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "36": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "37": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "38": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "39": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "40": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "41": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "42": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "43": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "44": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "45": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "46": [
+    false,
+    false,
+    false,
+    true
+  ],
+  "47": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "48": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "49": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "50": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "51": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "52": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "53": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "54": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "55": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "56": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "57": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "58": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "59": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "60": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "61": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "62": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "63": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "64": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "65": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "66": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "67": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "68": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "69": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "70": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "71": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "72": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "73": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "74": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "75": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "76": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "77": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "78": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "79": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "80": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "81": [
+    true,
+    false,
+    false,
+    false
+  ],
+  "82": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "83": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "84": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "85": [
+    false,
+    false,
+    false,
+    true
+  ],
+  "86": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "87": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "88": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "89": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "90": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "91": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "92": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "93": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "94": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "95": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "96": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "97": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "98": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "99": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "100": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "Grid_Size": 10
+}
