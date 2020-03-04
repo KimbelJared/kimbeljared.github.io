@@ -17,7 +17,7 @@ var mazeJSON = {};
 function preload()
 {
   //load Mazes
-  mazeJSON = loadJSON('http://jaredkimbel.com/projects/maze/assets/defaultMaze.json/');
+  mazeJSON = loadJSON("assets/defaultMaze.json");
 }
 
 function setup()
