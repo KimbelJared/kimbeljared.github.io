@@ -19,15 +19,17 @@ const CLASSES = {
 
 const labels = ['Week #1', 'Week #2', 'Week #3', 'Week #4', 'Week #5', 'Week #6', 'Week #7', 'Week #8', 'Week #9', 'Week #10', 'Week #11', 'Week #12', 'Week #13', 'Week #14', 'Week #15', 'Week #16']
 
-const acc400study = [.4211, 1.1316, .24, 3.7636, .8658, .3711, 1.7486, 2.3266, 3.6491, 1.3558, 0, .3733, 9.3719, 1.5813, .0483, 2.0522];
-const acc400lecture = [2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.2833, .8686, 1.25, 1, 1.9166, .8980, 1.1780, 0];
-const acc400total = [2.9211, 3.631, 2.74, 6.2636, 3.3658, 2.8711, 4.2486, 4.8266, 5.9325, 2.2244, 1.25, 1.3733, 11.2886, 2.4794, 1.2263, 2.0522];
+const class1study = [.4211, 1.1316, .24, 3.7636, .8658, .3711, 1.7486, 2.3266, 3.6491, 1.3558, 0, .3733, 9.3719, 1.5813, .0483, 2.0522];
+const class1lecture = [2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.2833, .8686, 1.25, 1, 1.9166, .8980, 1.1780, 0];
+const class1total = [2.9211, 3.631, 2.74, 6.2636, 3.3658, 2.8711, 4.2486, 4.8266, 5.9325, 2.2244, 1.25, 1.3733, 11.2886, 2.4794, 1.2263, 2.0522];
+const class1sum = [29.3008, 29.3947]
+
 const allData = {
   labels: labels,
   datasets: [
     {
       label: CLASSES.class1,
-      data: acc400total,
+      data: class1total,
       backgroundColor: CHART_COLORS.orange,
     },
     {
@@ -60,5 +62,34 @@ const allData = {
       data: [],
       backgroundColor: CHART_COLORS.blue,
     },
+  ]
+};
+
+const class1BarData = {
+  labels: labels,
+  datasets: [
+    {
+      label: "Study",
+      data: class1study,
+      backgroundColor: CHART_COLORS.orange,
+    },
+    {
+      label: "Lecture",
+      data: class1lecture,
+      backgroundColor: CHART_COLORS.green,
+    }
+  ]
+};
+
+const class1PieData = {
+  labels: [
+    'Study',
+    'Lecture'
+  ],
+  datasets: [
+    {
+      data: class1sum,
+      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green]
+    }
   ]
 };
