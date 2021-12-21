@@ -90,7 +90,7 @@ const class1PieData = {
     {
       data: class1sum,
       backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
-      borderColor: '#515151'
+      borderColor: 'rgba(0, 0, 0, 0)'
     }
   ]
 };
