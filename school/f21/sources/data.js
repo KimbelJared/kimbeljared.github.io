@@ -89,7 +89,8 @@ const class1PieData = {
   datasets: [
     {
       data: class1sum,
-      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green]
+      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
+      borderColor: '#515151'
     }
   ]
 };
