@@ -14,38 +14,40 @@ const CLASSES = {
   class4: 'BUS 321',
   class5: 'Work',
   class6: 'Rebelsat',
-  class7: 'Minerva',
-  class8: 'Gym'
+  class7: 'Physical Fitness'
 };
 
 const labels = ['Week #1', 'Week #2', 'Week #3', 'Week #4', 'Week #5', 'Week #6', 'Week #7', 'Week #8', 'Week #9', 'Week #10', 'Week #11', 'Week #12', 'Week #13', 'Week #14', 'Week #15', 'Week #16']
 
-const data = {
+const acc400study = [.4211, 1.1316, .24, 3.7636, .8658, .3711, 1.7486, 2.3266, 3.6491, 1.3558, 0, .3733, 9.3719, 1.5813, .0483, 2.0522];
+const acc400lecture = [2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.2833, .8686, 1.25, 1, 1.9166, .8980, 1.1780, 0];
+const acc400total = [2.9211, 3.631, 2.74, 6.2636, 3.3658, 2.8711, 4.2486, 4.8266, 5.9325, 2.2244, 1.25, 1.3733, 11.2886, 2.4794, 1.2263, 2.0522];
+const allData = {
   labels: labels,
   datasets: [
     {
       label: CLASSES.class1,
-      data: [161.22, 217.90, 164.40, 375.82, 201.95, 172.27, 254.92, 289.60],
+      data: acc400total,
       backgroundColor: CHART_COLORS.orange,
     },
     {
       label: CLASSES.class2,
-      data: [176.25,	190.95,	119.00,	199.53,	474.68,	264.48,	258.63,	273.25],
+      data: [],
       backgroundColor: CHART_COLORS.green,
     },
     {
       label: CLASSES.class3,
-      data: [221.00,	88.57,	175.55,	243.33,	150.00,	172.47,	150.00,	229.63],
+      data: [],
       backgroundColor: CHART_COLORS.purple,
     },
     {
       label: CLASSES.class4,
-      data: [102.20,	88.57,	101.50,	226.43,	163.30,	194.48,	179.67,	279.73],
+      data: [],
       backgroundColor: CHART_COLORS.red,
     },
     {
       label: CLASSES.class5,
-      data: [1702.53,	1593.80,	1503.83,	1157.85,	1456.83,	1211.83,	1667.62,	1051.45],
+      data: [],
       backgroundColor: CHART_COLORS.yellow,
     },
     {
@@ -55,37 +57,8 @@ const data = {
     },
     {
       label: CLASSES.class7,
-      data: [0.00,	0.00,	0.00,	0.00,	0.00,	0.00,	45.00, 0],
-      backgroundColor: CHART_COLORS.purple,
-    },
-    {
-      label: CLASSES.class8,
-      data: [110.07, 100.75, 116.48, 107.23, 125.12,	65.50,	56.83,	336.23],
-      backgroundColor: CHART_COLORS.purple,
+      data: [],
+      backgroundColor: CHART_COLORS.blue,
     },
   ]
 };
-
-const config = {
-  type: 'bar',
-  data: data,
-  options: {
-    plugins: {
-      title: {
-        display: true,
-        text: 'Fall \'21 - By Week'
-      },
-    },
-    responsive: true,
-    scales: {
-      x: {
-        stacked: true,
-      },
-      y: {
-        stacked: true
-      }
-    }
-  }
-};
-
-const myChart = new Chart(document.getElementById('barChart'), config);
