@@ -22,7 +22,16 @@ const barConfig = {
 
 const pieConfig = {
   type: 'pie',
-  data: class1PieData
+  data: class1PieData,
+  options: {
+    plugins: {
+      title: {
+        display: true,
+        text: 'ACC 400 - Total'
+      },
+    },
+    responsive: true
+  }
 };
 
 const myBarChart = new Chart(document.getElementById('barChart'), barConfig);
