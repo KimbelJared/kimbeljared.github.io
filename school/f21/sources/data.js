@@ -10,8 +10,8 @@ const CHART_COLORS = {
 const CLASSES = {
   class1: 'ACC 400',
   class2: 'ACC 405',
-  class3: 'FIN 301',
-  class4: 'BUS 321',
+  class3: 'BUS 321',
+  class4: 'FIN 301',
   class5: 'Work',
   class6: 'Rebelsat',
   class7: 'Physical Fitness'
@@ -29,10 +29,30 @@ const class2lecture = [2.5, 2.5, 2.5, 2.5, 2.5, 2, 2.5, 2.5, 2.25, 1.1375, 2.393
 const class2total = [3.1802, 3.1825, 3.2333, 3.3255, 7.9113, 4.4086, 4.3105, 4.5541, 3.26, 1.5863, 6.8466, 1.5925, 3.8361, 1, 2.29, 1.18];
 const class2sum = [23.6602, 32.0377];
 
-const class3study = [];
-const class3lecture = [];
-const class3total = [];
-const class3sum = [];
+const class3study = [.6769, .2261, .1916, 1.2738, 1.4716, .7413, .4944, 2.1622, 1.4461, 1.6252, .4097, .3811, .9183, .7019, .5936, 0];
+const class3lecture = [2.3666, 1.25, 1.5, 2.5, 1.25, 2.5, 2.5, 2.5, 2.7686, 0, 1.25, 1.25, 2.5677, 0, 2.5213, 0];
+const class3total = [3.0436, 1.4761, 1.6916, 3.7738, 2.7216, 3.2413, 2.9944, 4.6622, 4.2147, 1.6252, 1.6597, 1.6311, 3.4861, .7019, 3.115, 0];
+const class3sum = [13.3144, 26.7244];
+
+const class4study = [.3147, .545, 2.9258, 1.5555, 0, 0, 0, 1.5772, 0, 0, 0, 1.3972, 1.4519, 0, 0, 9.3941];
+const class4lecture = [2.5, 1.25, 0, 2.5, 2.5, 2.8744, 2.5, 2.25, 1.25, 0, 0, 3.2194, 2.9466, 2.5, 2.7216, 0];
+const class4total = [2.8147, 1.795, 2.9258, 4.0555, 2.5, 2.8744, 2.5, 3.8272, 1.25, 0, 0, 4.4616, 4.3986, 2.5, 2.7216, 9.3941];
+const class4sum = [19.1616, 29.0122];
+
+const class5study = [];
+const class5lecture = [];
+const class5total = [];
+const class5sum = [];
+
+const class6study = [];
+const class6lecture = [];
+const class6total = [];
+const class6sum = [];
+
+const class7study = [];
+const class7lecture = [];
+const class7total = [];
+const class7sum = [];
 
 const allData = {
   labels: labels,
@@ -49,13 +69,13 @@ const allData = {
     },
     {
       label: CLASSES.class3,
-      data: [],
-      backgroundColor: CHART_COLORS.purple,
+      data: class3total,
+      backgroundColor: CHART_COLORS.red,
     },
     {
       label: CLASSES.class4,
-      data: [],
-      backgroundColor: CHART_COLORS.red,
+      data: class4total,
+      backgroundColor: CHART_COLORS.purple,
     },
     {
       label: CLASSES.class5,
@@ -129,6 +149,66 @@ const class2PieData = {
   datasets: [
     {
       data: class2sum,
+      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
+      borderColor: 'rgba(0, 0, 0, 0)'
+    }
+  ]
+};
+
+const class3BarData = {
+  labels: labels,
+  datasets: [
+    {
+      label: "Study",
+      data: class3study,
+      backgroundColor: CHART_COLORS.orange,
+    },
+    {
+      label: "Lecture",
+      data: class3lecture,
+      backgroundColor: CHART_COLORS.green,
+    }
+  ]
+};
+
+const class3PieData = {
+  labels: [
+    'Study',
+    'Lecture'
+  ],
+  datasets: [
+    {
+      data: class3sum,
+      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
+      borderColor: 'rgba(0, 0, 0, 0)'
+    }
+  ]
+};
+
+const class4BarData = {
+  labels: labels,
+  datasets: [
+    {
+      label: "Study",
+      data: class4study,
+      backgroundColor: CHART_COLORS.orange,
+    },
+    {
+      label: "Lecture",
+      data: class4lecture,
+      backgroundColor: CHART_COLORS.green,
+    }
+  ]
+};
+
+const class4PieData = {
+  labels: [
+    'Study',
+    'Lecture'
+  ],
+  datasets: [
+    {
+      data: class4sum,
       backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
       borderColor: 'rgba(0, 0, 0, 0)'
     }
