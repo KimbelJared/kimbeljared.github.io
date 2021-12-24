@@ -27,7 +27,7 @@ const pieConfig = {
     plugins: {
       title: {
         display: true,
-        text: 'ACC 400 - Total'
+        text: 'ACC 405 - Total'
       },
     },
     responsive: true

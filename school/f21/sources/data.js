@@ -1,11 +1,18 @@
 const CHART_COLORS = {
-  red: 'rgb(255, 99, 132)',
-  orange: 'rgb(255, 159, 64)',
-  yellow: 'rgb(255, 205, 86)',
-  green: 'rgb(75, 192, 192)',
-  blue: 'rgb(54, 162, 235)',
-  purple: 'rgb(153, 102, 255)',
-  grey: 'rgb(201, 203, 207)'
+  red: 'rgba(255, 99, 132, 1)',
+  redL: 'rgba(255, 99, 132, 0.2)',
+  orange: 'rgba(255, 159, 64, 1)',
+  orangeL: 'rgba(255, 159, 64, 0.2)',
+  yellow: 'rgba(255, 205, 86, 1)',
+  yellowL: 'rgba(255, 205, 86, 0.2)',
+  green: 'rgba(75, 192, 192, 1)',
+  greenL: 'rgba(75, 192, 192, 0.2)',
+  blue: 'rgba(54, 162, 235, 1)',
+  blueL: 'rgba(54, 162, 235, 0.2)',
+  purple: 'rgba(153, 102, 255, 1)',
+  purpleL: 'rgba(153, 102, 255, 0.2)',
+  grey: 'rgba(201, 203, 207, 1)',
+  greyL: 'rgba(201, 203, 207, 0.2)'
 };
 const CLASSES = {
   class1: 'ACC 400',
@@ -13,8 +20,7 @@ const CLASSES = {
   class3: 'BUS 321',
   class4: 'FIN 301',
   class5: 'Work',
-  class6: 'Rebelsat',
-  class7: 'Physical Fitness'
+  class6: 'Physical Fitness'
 };
 
 const labels = ['Week #1', 'Week #2', 'Week #3', 'Week #4', 'Week #5', 'Week #6', 'Week #7', 'Week #8', 'Week #9', 'Week #10', 'Week #11', 'Week #12', 'Week #13', 'Week #14', 'Week #15', 'Week #16']
@@ -39,20 +45,11 @@ const class4lecture = [2.5, 1.25, 0, 2.5, 2.5, 2.8744, 2.5, 2.25, 1.25, 0, 0, 3.
 const class4total = [2.8147, 1.795, 2.9258, 4.0555, 2.5, 2.8744, 2.5, 3.8272, 1.25, 0, 0, 4.4616, 4.3986, 2.5, 2.7216, 9.3941];
 const class4sum = [19.1616, 29.0122];
 
-const class5study = [];
-const class5lecture = [];
-const class5total = [];
-const class5sum = [];
+const workweeks = [28.3756, 26.5633, 25.0639, 19.2975, 24.2806, 20.1972, 27.7936, 17.5242, 26.9156, 23.0450, 31.4600, 15.2533, 27.7017, 22.6194, 19.7542, 16.1192];
+const worktotal = [371.9642];
 
-const class6study = [];
-const class6lecture = [];
-const class6total = [];
-const class6sum = [];
-
-const class7study = [];
-const class7lecture = [];
-const class7total = [];
-const class7sum = [];
+const gymweeks = [1.8344, 1.6792, 1.9414, 1.7872, 2.0853, 1.0917, .9472, 5.6039, 2.7972, 4.2633, 2.2386, 2.8914, 2.0625, 1.6261, 4.4681, 1.4567];
+const gymtotal = [38.7742];
 
 const allData = {
   labels: labels,
@@ -60,38 +57,45 @@ const allData = {
     {
       label: CLASSES.class1,
       data: class1total,
-      backgroundColor: CHART_COLORS.orange,
+      backgroundColor: CHART_COLORS.orangeL,
+      borderColor: CHART_COLORS.orange,
+      borderWidth: 1
     },
     {
       label: CLASSES.class2,
       data: class2total,
-      backgroundColor: CHART_COLORS.green,
+      backgroundColor: CHART_COLORS.greenL,
+      borderColor: CHART_COLORS.green,
+      borderWidth: 1
     },
     {
       label: CLASSES.class3,
       data: class3total,
-      backgroundColor: CHART_COLORS.red,
+      backgroundColor: CHART_COLORS.redL,
+      borderColor: CHART_COLORS.red,
+      borderWidth: 1
     },
     {
       label: CLASSES.class4,
       data: class4total,
-      backgroundColor: CHART_COLORS.purple,
+      backgroundColor: CHART_COLORS.purpleL,
+      borderColor: CHART_COLORS.purple,
+      borderWidth: 1
     },
     {
       label: CLASSES.class5,
-      data: [],
-      backgroundColor: CHART_COLORS.yellow,
+      data: workweeks,
+      backgroundColor: CHART_COLORS.yellowL,
+      borderColor: CHART_COLORS.yellow,
+      borderWidth: 1
     },
     {
       label: CLASSES.class6,
-      data: [],
-      backgroundColor: CHART_COLORS.grey,
-    },
-    {
-      label: CLASSES.class7,
-      data: [],
-      backgroundColor: CHART_COLORS.blue,
-    },
+      data: gymweeks,
+      backgroundColor: CHART_COLORS.blueL,
+      borderColor: CHART_COLORS.blue,
+      borderWidth: 1
+    }
   ]
 };
 
@@ -101,12 +105,16 @@ const class1BarData = {
     {
       label: "Study",
       data: class1study,
-      backgroundColor: CHART_COLORS.orange,
+      backgroundColor: CHART_COLORS.orangeL,
+      borderColor: CHART_COLORS.orange,
+      borderWidth: 1
     },
     {
       label: "Lecture",
       data: class1lecture,
-      backgroundColor: CHART_COLORS.green,
+      backgroundColor: CHART_COLORS.greenL,
+      borderColor: CHART_COLORS.green,
+      borderWidth: 1
     }
   ]
 };
@@ -119,8 +127,8 @@ const class1PieData = {
   datasets: [
     {
       data: class1sum,
-      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
-      borderColor: 'rgba(0, 0, 0, 0)'
+      backgroundColor: [CHART_COLORS.orangeL, CHART_COLORS.greenL],
+      borderColor: [CHART_COLORS.orange, CHART_COLORS.green]
     }
   ]
 };
@@ -131,12 +139,16 @@ const class2BarData = {
     {
       label: "Study",
       data: class2study,
-      backgroundColor: CHART_COLORS.orange,
+      backgroundColor: CHART_COLORS.orangeL,
+      borderColor: CHART_COLORS.orange,
+      borderWidth: 1
     },
     {
       label: "Lecture",
       data: class2lecture,
-      backgroundColor: CHART_COLORS.green,
+      backgroundColor: CHART_COLORS.greenL,
+      borderColor: CHART_COLORS.green,
+      borderWidth: 1
     }
   ]
 };
@@ -149,8 +161,8 @@ const class2PieData = {
   datasets: [
     {
       data: class2sum,
-      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
-      borderColor: 'rgba(0, 0, 0, 0)'
+      backgroundColor: [CHART_COLORS.orangeL, CHART_COLORS.greenL],
+      borderColor: [CHART_COLORS.orange, CHART_COLORS.green]
     }
   ]
 };
@@ -161,12 +173,16 @@ const class3BarData = {
     {
       label: "Study",
       data: class3study,
-      backgroundColor: CHART_COLORS.orange,
+      backgroundColor: CHART_COLORS.orangeL,
+      borderColor: CHART_COLORS.orange,
+      borderWidth: 1
     },
     {
       label: "Lecture",
       data: class3lecture,
-      backgroundColor: CHART_COLORS.green,
+      backgroundColor: CHART_COLORS.greenL,
+      borderColor: CHART_COLORS.green,
+      borderWidth: 1
     }
   ]
 };
@@ -179,8 +195,8 @@ const class3PieData = {
   datasets: [
     {
       data: class3sum,
-      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
-      borderColor: 'rgba(0, 0, 0, 0)'
+      backgroundColor: [CHART_COLORS.orangeL, CHART_COLORS.greenL],
+      borderColor: [CHART_COLORS.orange, CHART_COLORS.green]
     }
   ]
 };
@@ -191,12 +207,16 @@ const class4BarData = {
     {
       label: "Study",
       data: class4study,
-      backgroundColor: CHART_COLORS.orange,
+      backgroundColor: CHART_COLORS.orangeL,
+      borderColor: CHART_COLORS.orange,
+      borderWidth: 1
     },
     {
       label: "Lecture",
       data: class4lecture,
-      backgroundColor: CHART_COLORS.green,
+      backgroundColor: CHART_COLORS.greenL,
+      borderColor: CHART_COLORS.green,
+      borderWidth: 1
     }
   ]
 };
@@ -209,8 +229,8 @@ const class4PieData = {
   datasets: [
     {
       data: class4sum,
-      backgroundColor: [CHART_COLORS.orange, CHART_COLORS.green],
-      borderColor: 'rgba(0, 0, 0, 0)'
+      backgroundColor: [CHART_COLORS.orangeL, CHART_COLORS.greenL],
+      borderColor: [CHART_COLORS.orange, CHART_COLORS.green]
     }
   ]
 };
