@@ -3,6 +3,13 @@ const barConfig = {
   data: class2BarData,
   options: {
     plugins: {
+      tooltip: {
+        displayColors: false,
+        xAlign: 'center',
+        yAlign: 'bottom',
+        titleAlign: 'center',
+        cornerRadius: 2,
+      },
       title: {
         display: true,
         text: 'ACC 405 - By Week'
@@ -32,6 +39,14 @@ const pieConfig = {
     },
     responsive: true
   }
+};
+
+Chart.overrides.pie.plugins.tooltip = {
+  displayColors: false,
+  xAlign: 'center',
+  yAlign: 'bottom',
+  titleAlign: 'center',
+  cornerRadius: 2
 };
 
 const myBarChart = new Chart(document.getElementById('barChart'), barConfig);
