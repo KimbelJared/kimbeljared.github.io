@@ -13,6 +13,7 @@ function generator(x, y){
   this.percent = 50;
   this.count = 0;
   this.growthRate = 1;
+  this.perFull = 1;
 
 
   this.update = function() {
@@ -37,7 +38,7 @@ function generator(x, y){
   this.modifyPercent = function(val) {
 
     if(this.percent >= 100){
-      this.modifyCount(1);
+      this.modifyCount(this.perFull);
 
       this.percent = 0;
     }

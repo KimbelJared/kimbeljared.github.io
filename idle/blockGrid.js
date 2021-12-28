@@ -1,6 +1,16 @@
 function blockGrid() {
-  this.residents = [8];
-  
+  this.residents = [0,0,0,0,0,0,0,0,0];
+
+  this.setup = function(){
+    for (var i = 0; i < this.residents.length; i++) {
+      this.residents[i] = new resident(i, 1);
+      this.residents[i].findHome();
+    }
+
+    for (var z = 0; z < this.residents.length; z++) {
+      console.log(this.residents[z]);
+    }
+  }
   this.show = function(){
     push();
     rectMode(CENTER);
@@ -24,6 +34,11 @@ function blockGrid() {
     rect(0, 125, 100, 100);
 
     rect(125, 125, 100, 100);
+
     pop();
+
+    for (var z = 0; z < this.residents.length; z++) {
+      this.residents[z].show();
+    }
   }
 }
